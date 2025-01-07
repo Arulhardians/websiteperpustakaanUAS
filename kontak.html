@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project UAS Arul Hardiansyah</title>
+    <style>
+        .clickable-box {
+            margin-top: 20px;
+            width: 110px;
+            height: 49px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+    footer {
+        background-color: #333; /* Warna latar belakang */
+        color: #fff; /* Warna teks */
+        padding: 20px 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .footer-container div {
+        flex: 1 1 300px; /* Ukuran minimum setiap kolom */
+        margin: 10px;
+    }
+
+    .footer-container h3 {
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: white; /* Warna judul */
+    }
+
+    .footer-container p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .social-icons a {
+        text-decoration: none;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        color:white;
+        row-gap: 200px;
+    }
+
+    .social-icons img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%; /* Membuat ikon bulat */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .social-icons img:hover {
+        transform: scale(1.2); /* Membesar saat di-hover */
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.4); /* Efek bayangan */
+
+    }
+
+    .footer-bottom {
+        text-align: center;
+        border-top: 1px solid #444;
+        margin-top: 20px;
+        padding-top: 10px;
+        font-size: 12px;
+        color: #aaa;
+    }
+
+    @media (max-width: 768px) {
+        .footer-container {
+            flex-direction: column; /* Susunan vertikal untuk layar kecil */
+            align-items: center;
+        }
+
+        .footer-container div {
+            text-align: center;
+        }
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <link rel="stylesheet" href="style.css">
+    <header>
+        <div class="logo"><img src="logo-unpam-300x291.png" width="60" align="left"></div>
+        <div class="Heading"><h1>Perpustakaan Universitas Pamulang</h1></div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="beranda.html">Beranda</a></li>
+            <li><a href="koleksi.html">Koleksi</a></li>
+            <li><a href="about.html">Tentang Kami</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <p>Website ini masih dalam tahap pengembangan, kritik dan saran yang membangun akan kami terima untuk evaluasi 😊 </p>
+    </section>
+
+    <section id="contact">
+        <h2>Kontak Kami</h2>
+        <form action="#" method="post">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Kritik dan saran:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Kirim</button>
+
+            <button class="clickable-box" onclick="alert('Logout berhasil'); window.location.href='index.html';">
+                Logout
+            </button>
+            
+        </form>
+    </section>
+
+   
+
+    <footer>
+        <div class="footer-container">
+            <!-- Bagian Informasi -->
+            <div class="footer-about">
+                <h3>Tentang Kami</h3>
+                <p>Perpustakaan Universitas Pamulang adalah pusat informasi akademik yang menyediakan berbagai koleksi buku, jurnal, dan sumber belajar lainnya.</p>
+            </div>
+    
+            <!-- Bagian Media Sosial -->
+            <div class="footer-social">
+                <h3>Follow Kami</h3>
+                <div class="social-icons">
+                    <a href="https://www.tiktok.com" target="_blank"><img src="logo tiktok.png" alt="Tiktok">@unpamofficial</a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="Instagram Logo (PNG-1080p) - Vector69Com.png" alt="Instagram" width="50px">@unpamofficial</a>
+                </div>
+            </div>
+    
+            <!-- Bagian Kontak -->
+            <div class="footer-contact">
+                <h3>Kontak</h3>
+                <p>Email: library@unpam.ac.id</p>
+                <p>Telepon: (021) 12345678</p>
+                <p>Alamat: Jalan Raya Pamulang No.1, Tangerang Selatan</p>
+            </div>
+        </div>
+    
+        <!-- Hak Cipta -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Arul Hardiansyah Putra. Semua Hak Dilindungi.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
